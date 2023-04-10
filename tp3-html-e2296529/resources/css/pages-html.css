@@ -1,0 +1,16 @@
+h1{
+    margin: 2rem 5rem;
+    font-family: var(--famille-conthrax);
+    font-size: var(--polices-de-caracters-grande);
+    color: var(--couleur-neutre-noir);
+}
+
+img {
+    margin: 2rem 5rem;
+}
+
+#retour{
+    margin: 2rem 5rem;
+    font-family: var(--famille-conthrax);
+    font-size: var(--polices-de-caracters-grande);
+}

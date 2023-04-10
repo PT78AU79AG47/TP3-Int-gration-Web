@@ -1,0 +1,136 @@
+
+.groupe-d-icons-medias-sociaux {
+  width: 36px;
+  height: 36px;
+  margin-right: 22px;
+}
+
+.groupe-d-icons-medias-sociaux:hover{
+  color: var(--couleur-accent-rouge);
+  box-shadow: 1px 1px 8px 1px;
+}
+
+.groupe-d-icons-methode-de-paiement {
+  width: 36px;
+  height: 24px;
+  margin-right: 27px;
+}
+
+.icone-separateur {
+  width: 22px;
+  height: 18px;
+}
+
+.balise-d-ancrage-texte{
+  margin-left: 30px;
+  text-decoration: none;
+  color: inherit;   
+}
+
+.titre-colonnes-texte {
+  margin-left: 60px;
+  font-family: var(--famille-gameplayed);
+  font-size: var(--polices-de-caracters-grande);
+}
+
+#pied-de-page{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto; 
+  gap: 10px;
+  width: 100%;
+  min-width: 1000px;
+  max-width: 1440px;
+  height: 320px;
+  font-family: var(--famille-conthrax);
+  font-size: var(--polices-de-caracters-moyenne);
+  background-color: var(--couleur-primaire-bleu);
+  color: var(--couleur-neutre-noir);
+}
+
+#conteneur-de-gauche{
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  align-items: center;
+  margin:20px;
+}
+
+#conteneur-du-centre{
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+}
+
+#conteneur-de-droite{
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  align-items: center;
+  margin:30px;
+}
+
+#barre-droits-d-auteurs{
+  grid-column: 1 / span 3;
+  background-color: var(--couleur-neutre-noir);
+  color: var(--couleur-secondaire-blanc);
+  text-align: center;
+}
+
+#conteneur-medias-sociaux{
+  margin-top: 36px;
+  margin-left: 113px;
+}
+
+#conteneur-methode-de-paiement{
+  margin-top: 21px;
+  margin-left: 80px;
+}
+
+#barre-d-infolettre {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  width: 300px; 
+  height: 40px;
+  padding: 4px 25px;
+  background-color: var(--couleur-secondaire-blanc);
+  border-color: var(--couleur-tertiaire-gris);
+  border: 1px solid;
+  border-radius: 100px;
+}
+
+#boite-d-infolettre{
+  width:290px;
+  height:36px;
+  color: var(--couleur-neutre-noir);
+  font-size: var(--polices-de-caracters-grande);  
+  outline: none;
+  border: none;
+}
+
+#texte-infolettre{
+  text-align: center;
+}
+
+#button-infolettre {
+  width: 100px;
+  height:40px;
+  text-align: center;
+  margin-left: 42px;
+  padding: 11px 4px;
+  background-color: var(--couleur-accent-rouge);
+  color: var(--couleur-secondaire-blanc);
+  font-family: var(--famille-gameplayed);
+  font-size: var(--polices-de-caracters-moyenne);
+  box-shadow: 0px 4px 30px #00000012;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+#barre-d-infolettre:hover{
+  color: var(--couleur-tertiaire-gris);
+  box-shadow: 1px 1px 8px 1px;
+}
+
+#barre-d-infolettre::placeholder {
+  color: var(--couleur-tertiaire-gris); 
+}

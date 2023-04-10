@@ -1,0 +1,12 @@
+:root {
+    --couleur-primaire-bleu: #4FB1FC;
+    --couleur-accent-rouge: #FC003F;
+    --couleur-neutre-noir: #000000;
+    --couleur-secondaire-blanc: #FFFFFF;
+    --couleur-tertiaire-gris: #C8C9CB;
+    --polices-de-caracters-petite: 14px;
+    --polices-de-caracters-moyenne: 16px;
+    --polices-de-caracters-grande: 24px;
+    --famille-conthrax: "Conthrax-SemiBold", sans-serif;
+    --famille-gameplayed: "GamePlayed-Regular", sans-serif;
+} 

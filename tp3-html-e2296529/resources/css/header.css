@@ -1,0 +1,221 @@
+
+@font-face {
+  font-family: "Conthrax-SemiBold";
+  src: url('resources/polices-de-caracteres/conthrax-sb.otf') format('opentype');
+  font-style: normal;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "GamePlayed-Regular";
+  src: url('resources/polices-de-caracteres/GamePlayed-vYL7.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@keyframes avance-et-recule {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(50px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pulsation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+h1{
+  font-family: var(--famille-conthrax);
+  font-size: var(--polices-de-caracters-grande);
+  color: var(--couleur-neutre-noir);
+}
+
+.button-menu {
+  text-align: center;
+  height:40px;
+  margin-left: 42px;
+  padding: 11px 24px;
+  font-family: var(--famille-gameplayed);
+  font-size: var(--polices-de-caracters-moyenne);
+  background-color: var(--couleur-accent-rouge);
+  color: var(--couleur-secondaire-blanc);
+  outline: 1px solid var(--couleur-accent-rouge);
+  transition: outline .5s ease 0s;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.button-menu:hover {
+  outline:3px solid var(--couleur-neutre-noir);
+  box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+}
+
+.btn-menu1 {
+  width: 173px;
+  padding: 11px 24px;
+}
+
+.btn-menu2 {
+  width: 232px;
+  padding: 11px 18px;
+}
+
+#entete{
+  width: 100%;
+  min-width: 1000px;
+  max-width: 1440px;
+  height: 178px;
+  box-sizing: border-box;
+  background-color: var(--couleur-primaire-bleu);   
+}
+
+#barre-de-notification {
+  display: grid;
+  grid-template-columns: auto 1fr auto 1fr;
+  align-items: center; 
+  height: 37px;
+  background-color: var(--couleur-neutre-noir);  
+}
+
+#barre-de-navigation {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  height: 81px;
+}
+
+#barre-de-menu{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "menu-hamburger boutton1 boutton2 boutton3 boutton4 boutton5 groupe-d-icones";
+  height: 60px;
+}
+
+#barre-de-recherche {
+  position: relative;
+  align-items: center;
+  width: 375px;
+  height: 40px;
+  margin-left: 53px;
+  padding: 4px 25px;
+  background-color: var(--couleur-secondaire-blanc);
+  border-color: var(--couleur-tertiaire-gris);
+  border: 1px solid;
+  border-radius: 100px;  
+}
+
+#barre-de-recherche:hover{
+  box-shadow: 1px 1px 8px 1px var(--couleur-tertiaire-gris);
+}
+
+#boite-de-recherche{
+  width:340px;
+  height:36px;
+  font-size: var(--polices-de-caracters-grande);
+  color: var(--couleur-neutre-noir);
+  outline: none;
+  border: none;
+}
+
+#boite-de-recherche::placeholder {
+  color: var(--couleur-tertiaire-gris); 
+}
+
+#button-langue {
+  text-align: center;
+  font-family: var(--famille-conthrax);
+  font-size: var(--polices-de-caracters-grande);
+  color: var(--couleur-neutre-noir);
+  text-decoration: none;
+}
+
+#icone-camion-de-livraison {
+  position: relative;
+  left: 38px;
+  animation: avance-et-recule 3s linear 3;
+}
+
+#icone-fleche-vers-le-bas {
+  position:relative;
+  height:20px;
+  top:5px;
+  left:10px;
+}
+
+#icone-menu-hamburger {
+  position: absolute;
+  top: 132px;
+  left: 30px;
+}
+
+#icone-favoris {
+  animation: rotation 2s linear 3;
+}
+
+#icone-utilisateur {
+  animation: pulsation 1s 5;
+  animation-delay: 4s; 
+}
+
+#icone-panier {
+  animation: rotation 2s linear 3;
+  animation-direction: reverse;
+}
+
+#groupe-de-bouttons {
+  grid-column: 1 / span 3;
+  justify-self: center;
+  margin-left: 50px;  
+}
+
+#groupe-d-icones1 {
+  align-items: center;
+  min-width: 284px;
+  margin-left:123px;
+}
+
+#groupe-d-icones2 {
+  margin-right:33px;
+}
+
+#logo-retroGramingPosters {
+  position: relative;
+  left: 38px;
+}
+
+#notification-texte {
+  text-align: center;
+  margin: 0;
+  padding-left: 10px;
+  font-family: var(--famille-conthrax);
+  color: var(--couleur-secondaire-blanc);
+}
